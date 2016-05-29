@@ -1,0 +1,144 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2016, 4:13:45 PM
+    Author     : Desindev @ http://www.desindev.com/ - Professional Web Design & Development Services
+*/
+
+body, html {
+    padding:0;
+    margin:0;
+}
+
+#elPicker {
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    background:#45464B;
+    color: #BABDBE;
+    width:222px;
+    font-family: Oswald;
+    z-index:2000;
+}
+#elPicker h2{
+    font-size:14px;
+    display:block;
+    text-align:center;
+    padding:0;
+    margin:10px 5px 5px 5px;
+}
+#elPicker ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+#elPicker li {
+    max-width:110px;
+    float:left;
+    border-radius:4px;
+    background:#45464B;
+    font-size:10px;
+}
+#elPicker li:hover {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+#elPicker li:nth-child(odd) {
+    padding:6px 7px 6px 7px;
+}
+#elPicker li:nth-child(even) {
+    padding:6px 7px 6px 7px;
+    margin-left:-6px;
+}
+#elPicker ul li img{
+    max-width:100px;
+    max-height:75px;
+}
+#elPicker ul li span{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    display:block;
+    margin-top:3px;
+}
+
+#elDropper {
+    max-width:900px;
+    width:auto;
+    background:#eeeeee;
+    padding:10px 10px 20px 10px;
+    margin:10px;    
+    border-radius:4px;
+    overflow:hidden;
+    min-height:100px;
+}
+
+@media screen and (min-width: 950px) {
+    #elDropper {
+        margin:10px auto 10px;    
+    }
+}
+
+.formComponent {
+    border:1px solid #555555;
+    padding:10px;
+    margin-top:10px !important;
+    border-radius:5px;
+    cursor:grab;
+    position: relative;
+}
+
+.btnCloseComponent {
+    max-width:25px;
+    position:absolute;
+    right:8px;
+    top:8px;
+    z-index:1000;
+    cursor:pointer;
+}
+
+.ui-state-highlight {
+    height: auto;
+    padding:10px;
+    margin:10px 0;
+    border:1px dashed #555555 !important;
+    border-radius:5px;
+}
+
+#dialog-confirm {
+    display:none;
+}
+
+.ui-dialog {
+    /*min-width: 220px !important;*/
+}
+
+.ui-dialog-content {
+   height:auto !important;
+}
+
+.ui-dialog-content p{
+   font-size:14px;
+       -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+}
+
+.ui-button-text {
+    font-size:14px;
+}
+
+.ui-dialog-title {
+    font-size: 16px;
+}
+
+.ui-dialog-buttonpane {
+    margin-top:3px !important;
+}
